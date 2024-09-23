@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.navRibbon {
+  width: 100%;
+  z-index: 11;
+  position: absolute;
+  top: $header-height;
+  font-family: $sofiapro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+
+  &.hideRibbon {
+    transform: translateY(-100%);
+  }
+
+  &.blur {
+    @include media-breakpoint-down(lgg) {
+      @include blurNavigation();
+    }
+  }
+
+  .textContainer {
+    color: white;
+    padding: 11px 25px;
+  }
+
+  @include media-breakpoint-down(lgg) {
+    top: 80px;
+  }
+
+  .ctaText {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+  }
+
+  .noLink {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .link {
+    cursor: pointer;
+  }
+}

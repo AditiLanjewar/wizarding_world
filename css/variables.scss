@@ -1,0 +1,633 @@
+$black: #000;
+$black-rgb: 0, 0, 0;
+$ww-black: #10141b;
+$bunker: #0d0f15;
+$grey-dark: #202020;
+$charcoal-grey: #353643;
+$disabled-bg-grey: #bdbdbd;
+$disabled-primary: #d2d3db;
+$disabled-font-grey: #696a71;
+$grey: #949494;
+$grey-medium-light: #A9A9A9;
+$grey-light: #eaeaea;
+$grey-medium-dark: #333;
+$grey-medium: #858793;
+$purple: #645cab;
+$purple-primary: #514a92;
+$purple-primary-hover: #433C87;
+$purple-light: #6b63b5;
+$purple-light-alt: #9990ea;
+$purple-dark: #2e2733;
+$purple-hover: #514a92;
+$grey-caption: #757575;
+$grey-feature: #696b78;
+$gunmetal: #2C2D3F;
+$dark-liver: #515151;
+$dirt-brown: #85693d;
+$white: #ffffff;
+$white-rgb: 255, 255, 255;
+$boulder-grey: #777777;
+$royal-blue: #202a70;
+$port-gore: #231e4e;
+$bunker: #10141b;
+$tuna: #353643;
+$gallery-white: #f0f0f0;
+$alto-white: #d2d2d2;
+$pale-navy: #d2d3db;
+$medium-purple: #20011e;
+$medium-purple-rgb: 32, 1, 30;
+$campaign-purple: #13101a;
+$campaign-purple-rgb: 19, 16, 26;
+$lotion: #FAFAFA;
+$arsenic: #373A4D;
+$blueRule: #30455E;
+$melrose: #c2bbff;
+
+$off-white: #f9f4f2;
+$eerie-black: #1A1A25;
+$outer-space: #414359;
+$ww-black-rgb: 16, 20, 27;
+$bold-red: #A6293C;
+$deep-purple: #302768;
+
+$gold: #d2aa6b;
+$gold-dark: #b6a571;
+$gold-light: #f9f4f2;
+$gold-light-rgb: 249, 244, 242;
+$gold-grad-light: #e7da9a;
+$gold-grad-med: #cdb373;
+$gold-grad-med-rgb: 205, 179, 115;
+$gold-grad-dark: #996e2d;
+$gold-mid: #ecbf77;
+$gold-high: #d2aa6b;
+
+$silver-grad-light: #c2c2c2;
+$silver-grad-med: #999;
+$silver-grad-dark: #666;
+
+$grey-legal: #aaa;
+$grey-legal-border: #9fa1ad;
+$grey-legal-lighter: #e7e3db;
+$grey-legal-darker: #a8a8a8;
+$grey-legal-dark: #696b78;
+$grey-legal-darkest: #242633;
+$grey-legal-darkest-rgb: 36, 38, 51;
+$whiteAlpha: rgba(255, 255, 255, 0.7);
+
+$white-floral: #faf6f0;
+$grey-lightred: #dfdbd9;
+$input-bg: #1C1E28;
+$input-bg2: #161822;
+
+// modern button styles
+$blueViolet: #6B63B5;
+$darkSlateBlue: #514A92;
+$darkSlateBlue2: #433C87;
+$spaceCadet: #2F2F4D;
+$yankeesBlue: #272841;
+$darkSilver: #696B78;
+$vodka: #C2BBFF;
+$focus: #ecbe76;
+
+// New home gradients
+$homeRow1a: #15111D;
+$homeRow1b: #323657;
+$homeRow1c: #15111D;
+$homeRow1d: #26253d;
+$homeRow1Banner: #110B0E;
+$homeRow2a: #120B0E;
+$homeRow2b: #474083;
+$homeRow2c: #120c0f;
+$homeRow2d: #2b2445;
+$homeRow2Banner: #110B0E;
+$homeRow3a: #110B0E;
+$homeRow3b: #373737;
+$homeRow3c: #110B0E;
+$homeRow3d: #1e1b1d;
+$homeRow3Banner: #18150D;
+$homeRow4a: #18150E;
+$homeRow4b: #554936;
+$homeRow4c: #2b221d;
+$homeRow4d: #41362a;
+$homeRow4Banner: #0E0812;
+$homeRow5a: #0E0812;
+$homeRow5b: #443455;
+$homeRow5c: #180e1e;
+$homeRow5d: #2a133f;
+$homeRow5Banner: #0F0F11;
+$homeRow0a: #0F0F11;
+$homeRow0b: #3F5468;
+$homeRow0c: #0c1c2e;
+$homeRow0d: #1e3551;
+$homeRow0Banner: #15111C;
+$cloudCover: #14111a;
+
+// Theme drop cap colors
+$noHouseLight: #514A92;
+$noHouseDark: #9990EA;
+$gryffindorLight: #8F302D;
+$gryffindorDark: #FF5649;
+$hufflepuffLight: #B17220;
+$hufflepuffDark: #FCB542;
+$slytherinLight: #005E4E;
+$slytherinDark: #00B195;
+$ravenclawLight: #0052BB;
+$ravenclawDark: #6DA8FF;
+
+$noHouseDropCap: linear-gradient(50deg, $noHouseLight 10%, $noHouseDark 100%);
+$gryffindorDropCap: linear-gradient(50deg, $gryffindorLight 10%, $gryffindorDark 100%);
+$hufflepuffDropCap: linear-gradient(50deg, $hufflepuffLight 10%, $hufflepuffDark 100%);
+$slytherinDropCap: linear-gradient(50deg, $slytherinLight 10%, $slytherinDark 100%);
+$ravenclawDropCap: linear-gradient(50deg, $ravenclawLight 10%, $ravenclawDark 100%);
+
+// Hogwarts Theme colors
+$pottermoreNavBG: #002b39;
+$hufflepuffNavBG: #996e00;
+$gryffindorNavBG: #d30004;
+$slytherinNavBG: #003e00;
+$ravenclawNavBG: #22254a;
+$ilvermornyNavBG: #036983;
+
+$slytherinBGCircle: #07312a;
+$hufflepuffBGCircle: #b17220;
+$ravenclawBGCircle: #173151;
+$gryffindorBGCircle: #591e1c;
+$noHouseBGCircle: #474083;
+
+$pottermore: #003e51;
+$hufflepuff: #f2b800;
+$gryffindor: #8d0000;
+$slytherin: #005416;
+$ravenclaw: #004e80;
+$ilvermorny: #8b0e00;
+$noHouse: #474083;
+$user-gryffindor: #361b21;
+$user-hufflepuff: #412c1c;
+$user-ravenclaw: #173151;
+$user-slytherin: #05201c;
+$user-no-house: #231e4e;
+
+// Spotlight background colors
+$spotlight-theme-light: #24152F;
+
+$user-gryffindor-rgb: 54, 27, 33;
+$user-hufflepuff-rgb: 65, 44, 28;
+$user-ravenclaw-rgb: 23, 49, 81;
+$user-slytherin-rgb: 5, 32, 28;
+$user-no-house-rgb: 35, 30, 78;
+
+//leaderboard gradients
+$slytherinGrad1: #07312a;
+$slytherinGrad2: #086c5c;
+$slytherinGrad3: #19A791;
+
+$ravenclawGrad1: #1b3a62;
+$ravenclawGrad2: #265caa;
+$ravenclawGrad3: #5fa0ff;
+
+$hufflepuffGrad1: #cc850a;
+$hufflepuffGrad2: #feb447;
+$hufflepuffGrad3: #ffe2b7;
+
+$gryffindorGrad1: #6a2b2b;
+$gryffindorGrad2: #de564b;
+$gryffindorGrad3: #ff867e;
+
+$gryffindorScoreboard: #de554b;
+$gryffindorScoreboard2: #C34A41;
+$ravenclawScoreboard: #265caa;
+$hufflepuffScoreboard: #fcb542;
+$slytherinScoreboard: #086c5c;
+$darkHufflepuffText: #212028;
+
+// Gold colors
+$gold-sand: #ecbf77;
+
+// House Adjective Text Colors
+$gryffindorAdjective: #fd7366;
+$hufflepuffAdjective: #fdc055;
+$ravenclawAdjective: #317adc;
+$slytherinAdjective: #259a87;
+
+// avatar
+$avatarGrayBlue: #ACAFC1;
+$avatarLightBlue: #6896B1;
+$avatarMedBlue: #406C92;
+$avatarLightTan: #A36C55;
+$avatarLightTan2: #CCA281;
+$avatarLightTan3: #C49E87;
+$avatarMedTan: #80513A;
+$avatarMedTan2: #AA7556;
+$avatarPurple: #7A6FD3;
+$avatarPurple2: #5F36B1;
+$avatarPurple3: #3D366B;
+$avatarPurple4: #6B63B5;
+$avatarDarkPurple: #0E061C;
+
+// avatar icon
+$avatarSlytherin: #08463C;
+$avatarHufflepuff: #B17220;
+$avatarRavenclaw: #194176;
+$avatarGryffindor: #6A2B2B;
+$avatarNoHouse: #514A92;
+
+// Search
+$charcoal: #282828;
+$dust: #989898;
+$flat: #707070;
+$ash: #353434;
+$deepSatin: #1A1C23;
+
+// SignUpNow Modal
+$heliotrope: #9589FF;
+$jacarta: #2B255B;
+$haiti: #131030;
+$sazerac: #FFF5E2;
+$corvette: #FCD396;
+$threeGray: #333333;
+
+// Share Menu
+$shareMenu: #21222D;
+
+// Native Quiz
+$quizContainerWidth: 1100px;
+
+// Fact File Characters & Pets
+$charactersBG: #302940;
+$charactersSecondaryBG: #281D40;
+$charactersLabel: #5B4882;
+$charactersSpotlightBackground: #3d3458;
+$charactersLinkColor: #c2bbff;
+$charactersDivider: #7352b2;
+
+// Fact File Objects
+$objectsBG: #352938;
+$objectsSecondaryBG: #2E1F32;
+$objectsLabel: #6C4476;
+$objectsSpotlightBackground: #4a3750;
+$objectsLinkColor: #dab4e3;
+$objectsDivider: #734179;
+
+// Fact File Locations
+$locationsBG: #3b282d;
+$locationsSecondaryBG: #2F1E22;
+$locationsLabel: #835D71;
+$locationsSpotlightBackground: #513a40;
+$locationsLinkColor: #ecc4cb;
+$locationsDivider: #7c526a;
+
+// Fact File Potions & Plants
+$potionsBG: #24261c;
+$potionsSecondaryBG: #1B1F14;
+$potionsLabel: #6D754D;
+$potionsSpotlightBackground: #353a2a;
+$potionsLinkColor: #BCC987;
+$potionsDivider: #606644;
+
+// Fact File Creatures
+$creaturesBG: #272d2e;
+$creaturesSecondaryBG: #1C2828;
+$creaturesLabel: #4F6B6A;
+$creaturesSpotlightBackground: #313e3d;
+$creaturesLinkColor: #97bebd;
+$creaturesDivider: #47605e;
+
+// Fact File Spells
+$spellsBG: #2e3a48;
+$spellsSecondaryBG: #212A35;
+$spellsLabel: #3D5776;
+$spellsSpotlightBackground: #3b4a5b;
+$spellsLinkColor: #abc9ee;
+$spellsDivider: #355879;
+
+// Fact File Magical Miscellany
+$miscBG: #39322c;
+$miscSecondaryBG: #2C2621;
+$miscLabel: #534C46;
+$miscSpotlightBackground: #4a433c;
+$miscLinkColor: #e1c7b0;
+$miscDivider: #685344;
+
+// Fact File Featured Facts
+$featuredFactEyebrow: #CCC8BF;
+$featuredFactDescription: #D2D3DB;
+$featuredFactCTA: #BA9C67;
+$featuredBadgeLabel: #F9F4F2;
+$featuredFactBoxShadow: #00000033;
+
+$filterCardBg: #1C1E27;
+$filterShowMoreColor: #767B8A;
+
+// fact file index page filter/list colors
+$factFileFilterCategories: (
+  'all': (
+    "filterTextColor": #D1B07D,
+    "filterActiveBackgroundColor": #846B3A,
+    "filterBorderColor": #846B3A,
+  ),
+  'characters-and-pets': (
+    "filterTextColor": #9687C5,
+    "filterActiveBackgroundColor": $charactersLabel,
+    "filterBorderColor": $charactersLabel,
+    "itemBackgroundColor": #3D3458,
+    "bookmarkBackgroundColor": $charactersLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-characters-and-pets-mobile.svg',
+  ),
+  'objects': (
+    "filterTextColor": #AF79AB,
+    "filterActiveBackgroundColor": $objectsLabel,
+    "filterBorderColor": $objectsLabel,
+    "itemBackgroundColor": #4A3750,
+    "bookmarkBackgroundColor": $objectsLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-objects-mobile.svg'
+  ),
+  'locations': (
+    "filterTextColor": #A27C90,
+    "filterActiveBackgroundColor": $locationsLabel,
+    "filterBorderColor": $locationsLabel,
+    "itemBackgroundColor": #513A40,
+    "bookmarkBackgroundColor": $locationsLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-locations-mobile.svg'
+  ),
+  'plants-and-potions': (
+    "filterTextColor": #818A5B,
+    "filterActiveBackgroundColor": $potionsLabel,
+    "filterBorderColor": $potionsLabel,
+    "itemBackgroundColor": #353A2A,
+    "bookmarkBackgroundColor": $potionsLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-plants-and-potions-mobile.svg'
+  ),
+  'creatures': (
+    "filterTextColor": #6C8E8D,
+    "filterActiveBackgroundColor": $creaturesLabel,
+    "filterBorderColor": $creaturesLabel,
+    "itemBackgroundColor": #313E3D,
+    "bookmarkBackgroundColor": $creaturesLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-creatures-mobile.svg'
+  ),
+  'spells': (
+    "filterTextColor": #6288B7,
+    "filterActiveBackgroundColor": $spellsLabel,
+    "filterBorderColor": $spellsLabel,
+    "itemBackgroundColor": #3B4A5B,
+    "bookmarkBackgroundColor": $spellsLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-spells-mobile.svg'
+  ),
+  'magical-miscellany': (
+    "filterTextColor": #918478,
+    "filterActiveBackgroundColor": $miscLabel,
+    "filterBorderColor": $miscLabel,
+    "itemBackgroundColor": #4A433C,
+    "bookmarkBackgroundColor": $miscLabel,
+    "mobileIcon": '/images/pages/fact-file/category-icon-magical-miscellany-mobile.svg'
+  )
+);
+
+// fonts
+$japaneseFallbackFonts: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+$sofiapro: 'Sofia Pro', Helvetica, $japaneseFallbackFonts, sans-serif;
+$bluu: 'Bluu Next', $japaneseFallbackFonts, serif;
+$masonsans: 'Mason Sans OT', $japaneseFallbackFonts, serif;
+$bluuSuuperstarItalic: 'BluuSuuperstar-Italic', $japaneseFallbackFonts, serif;
+
+// if these ever change they also need to be updated in withBreakpoints.js
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  ss: 700px,
+  md: 768px,
+  xm: 900px,
+  lg: 1042px,
+  lgg: 1150px, // special case for navbar only
+  xl: 1320px,
+  xxl: 2200px,
+);
+// Grid containerss
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 1042px,
+  xl: 1300px,
+);
+
+$character-card-max-width: 1220px;
+$homepage-max-width: 1200px;
+$homepage-padding: 25px;
+$homepage-vertical-padding: 60px;
+$homepage-vertical-padding-extra: 120px;
+
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+$grid-columns: 12;
+$grid-gutter-width: 50px;
+
+// Header
+$header-height: 108px;
+$header-height-mobile: 80px;
+$navigation-ribbon-min-height: 39px;
+
+//this goes on the outter most section around the first grid container
+$containerGutter: 32px - calc($grid-gutter-width/2);
+
+// Card Metrics
+$card-content-padding: 10px;
+$card-border-radius: 8px;
+
+// Forms
+$form-label-margin: 24px;
+$form-input-margin: 8px 0;
+
+$form-label-size: 11px;
+$form-input-size: 16px;
+
+$form-input-padding: 16px 21px;
+$form-input-icon-right: 16px 63px 16px 16px;
+$form-input-icon-left: 16px 32px 16px 50px;
+$form-emphasis-padding: 28px 25px 27px;
+
+$form-input-radius: 3px;
+
+$form-input-state: #8a8a8a;
+
+$form-input-success: #a2bc9d;
+$form-input-fail: #ff525e;
+
+$form-text-small: 12px;
+$form-text-large: 14px;
+
+$error: #ff6e6e;
+
+/* Font Sizes (with 8px html font-size base) */
+$font-size-tiny: 0.75rem; //6px
+$font-size-small: 1rem; //8px
+$font-size-medium: 1.5rem; //12px
+$font-size-normal: 1.75rem; //14px
+$font-size-big: 2rem;
+$font-size-large: 2.25rem; //18px
+$font-size-huge: 3.25rem; //26px
+$font-size-title: 4.5rem; //36pxz
+
+$content-file-footer-height: 26px;
+
+%flowContainerBackground {
+  background-color: $grey-dark;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  z-index: 0;
+  margin: 0;
+}
+
+@mixin sofiaBold() {
+  font-family: $sofiapro;
+  font-weight: bold;
+  line-height: 1.18;
+  letter-spacing: 1.1px;
+}
+
+@mixin sofiaSemiBold() {
+  font-family: $sofiapro;
+  font-weight: 600;
+}
+
+@mixin sofiaRegular() {
+  font-family: $sofiapro;
+  font-weight: normal;
+}
+
+@mixin masonBold() {
+  font-family: $masonsans;
+  font-weight: bold;
+}
+
+@mixin bluunext-font-base {
+  font-family: $bluu;
+  font-weight: bold;
+}
+
+%Bluunext {
+  @include bluunext-font-base;
+
+  &--h1 {
+    font-size: 54px;
+    line-height: 56px;
+
+    @include bluunext-font-base;
+  }
+
+  &--h2 {
+    font-size: 30px;
+    line-height: 32px;
+
+    @include bluunext-font-base;
+  }
+
+  &--h3 {
+    font-size: 20px;
+    line-height: 24px;
+
+    @include bluunext-font-base;
+  }
+
+  &--h4 {
+    font-size: 16px;
+    line-height: 16px;
+
+    @include bluunext-font-base;
+  }
+}
+
+@mixin bluuSuuperstarItalic() {
+  font-family: $bluuSuuperstarItalic;
+  font-weight: normal;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$house-colors: (
+  gryffindor: $gryffindorBGCircle,
+  slytherin: $slytherinBGCircle,
+  hufflepuff: $hufflepuffBGCircle,
+  ravenclaw: $ravenclawBGCircle,
+);
+
+@mixin house-theme($house) {
+  background-color: map-get($house-colors, $house);
+}
+
+@mixin HouseBackground($house) {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-576.jpg');
+
+  @include media-pixel-ratio(2) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-576@2x.jpg');
+  }
+
+  @include media-breakpoint-up(sm) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-700.jpg');
+
+    @include media-pixel-ratio(2) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-700@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(ss) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-768.jpg');
+
+    @include media-pixel-ratio(ss) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-768@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-900.jpg');
+
+    @include media-pixel-ratio(2) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-900@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(xm) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-1042.jpg');
+
+    @include media-pixel-ratio(xm) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-1042@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-1320.jpg');
+
+    @include media-pixel-ratio(2) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-1320@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-2200.jpg');
+
+    @include media-pixel-ratio(2) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-2200@2x.jpg');
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-3840.jpg');
+
+    @include media-pixel-ratio(xxl) {
+      background-image: url('/images/pages/profile/house-backgrounds/#{$house}-background-3840@2x.jpg');
+    }
+  }
+
+  .theme {
+    @include house-theme($house);
+  }
+}

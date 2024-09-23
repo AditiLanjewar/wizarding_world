@@ -1,0 +1,212 @@
+@import './variables.scss';
+@import './themes.scss';
+@import './mixins.scss';
+
+body,
+.body {
+  font-family: $sofiapro;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $black;
+
+  &.lock-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    line-height: 0;
+  }
+}
+
+.body {
+  &--1 {
+    font-family: $sofiapro;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &--2 {
+    font-family: $sofiapro;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &--3 {
+    font-family: $sofiapro;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  &--4 {
+    font-family: $sofiapro;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  &--5 {
+    font-family: $sofiapro;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+}
+
+h1 {
+  @extend %Bluunext--h1;
+}
+
+h2 {
+  @extend %Bluunext--h2;
+}
+
+h3 {
+  @extend %Bluunext--h3;
+}
+
+h4 {
+  @extend %Bluunext--h4;
+}
+
+p {
+  page-break-inside: avoid;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  position: relative;
+  border-bottom: 1px solid $grey;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.miniCta {
+  font-family: $sofiapro;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.descriptor {
+  font-family: $sofiapro;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.error-text {
+  font-family: $sofiapro;
+  font-size: 14px;
+  color: $form-input-fail;
+
+  a {
+    font-family: $sofiapro;
+    font-size: 14px;
+    color: $form-input-fail;
+    text-decoration: underline;
+  }
+}
+
+.super {
+  font-size: 0.2em;
+  vertical-align: 50%;
+}
+
+// because of line-hight text inside input not centered.
+input,
+select,
+textarea {
+  line-height: unset !important;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+.dark {
+  @include spread-map($theme-map-dark);
+}
+.light {
+  @include spread-map($theme-map-light);
+}
+.medium {
+  @include spread-map($theme-map-medium);
+}
+.fan-club {
+  @include spread-map($theme-map-fan-club);
+}
+.campaign {
+  @include spread-map($theme-map-campaign);
+}
+.ravenclaw {
+  @include spread-map($theme-map-ravenclaw);
+}
+.slytherin {
+  @include spread-map($theme-map-slytherin);
+}
+.gryffindor {
+  @include spread-map($theme-map-gryffindor);
+}
+.hufflepuff {
+  @include spread-map($theme-map-hufflepuff);
+}
+.noHouse {
+  @include spread-map($theme-map-noHouse);
+}
+.user-ravenclaw {
+  @include spread-map($theme-map-user-ravenclaw);
+}
+.user-gryffindor {
+  @include spread-map($theme-map-user-gryffindor);
+}
+.user-slytherin {
+  @include spread-map($theme-map-user-slytherin);
+}
+.user-hufflepuff {
+  @include spread-map($theme-map-user-hufflepuff);
+}
+.user-no-house {
+  @include spread-map($theme-map-user-no-house);
+}
+.discover {
+  @include spread-map($theme-map-discover);
+}
+
+// fact file themes
+.characters-and-pets {
+  @include spread-map($theme-map-fact-file-characters-and-pets);
+}
+.objects {
+  @include spread-map($theme-map-fact-file-objects);
+}
+.locations {
+  @include spread-map($theme-map-fact-file-locations);
+}
+.plants-and-potions {
+  @include spread-map($theme-map-fact-file-plants-and-potions);
+}
+.creatures {
+  @include spread-map($theme-map-fact-file-creatures);
+}
+.spells {
+  @include spread-map($theme-map-fact-file-spells);
+}
+.magical-miscellany {
+  @include spread-map($theme-map-fact-file-magical-miscellany);
+}

@@ -1,0 +1,213 @@
+@mixin stroke($color: $black, $style: solid) {
+  border: 1px $style $color;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color, $opacity, $inset: false) {
+  @if $inset {
+    box-shadow: $top $left $blur $spread rgba($color, $opacity) inset;
+  } @else {
+    box-shadow: $top $left $blur $spread rgba($color, $opacity);
+  }
+}
+
+@mixin text-shadow($x, $y, $blur, $color, $opacity) {
+  text-shadow: $x $y $blur rgba($color, $opacity);
+}
+
+@mixin linear-gradient-bg($args...) {
+  background-image: -webkit-linear-gradient($args);
+  background-image: linear-gradient($args);
+}
+
+@mixin fill-parent($position: absolute, $top: 0, $bottom: 0, $left: 0, $right: 0) {
+  position: $position;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+// convert pixel values to em
+
+$browser-context: 18; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{calc($pixels/$context)}em;
+}
+
+// replacing boostrap mixins to facilitate removal of bootstrap as dependency
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: map-get($grid-breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin media-pixel-ratio($multiplier) {
+  @media (-webkit-min-device-pixel-ratio: $multiplier), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-between($lower, $upper) {
+  $min: map-get($grid-breakpoints, $lower);
+  $max: map-get($grid-breakpoints, $upper);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($lower, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+@mixin btnAllUnset() {
+  border: unset;
+  background-color: unset;
+}
+
+@mixin fixHeightWidth($height, $width) {
+  width: $width;
+  min-width: $width;
+  height: $height;
+  min-height: $height;
+}
+
+@mixin fixContainerWidth() {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin backgroundImages($path, $ext: jpg) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media only screen and (min-width: 1px) and (max-width: 1440px) and (orientation: landscape) {
+    background-image: url('#{$path}/horizontal/bg.#{$ext}');
+  }
+  @media only screen and (min-width: 1440px) and (max-width: 2880px) and (orientation: landscape) {
+    background-image: url('#{$path}/horizontal/bg@2x.#{$ext}');
+  }
+  @media only screen and (min-width: 2880px) and (orientation: landscape) {
+    background-image: url('#{$path}/horizontal/bg@3x.#{$ext}');
+  }
+  @media only screen and (min-height: 1px) and (max-height: 667px) and (orientation: portrait) {
+    background-image: url('#{$path}/vertical/bg.#{$ext}');
+  }
+  @media only screen and (min-height: 667px) and (max-height: 1334px) and (orientation: portrait) {
+    background-image: url('#{$path}/vertical/bg@2x.#{$ext}');
+  }
+  @media only screen and (min-height: 1334px) and (orientation: portrait) {
+    background-image: url('#{$path}/vertical/bg@3x.#{$ext}');
+  }
+}
+
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+    #{$key}: $value;
+  }
+}
+
+/*
+A simple little SCSS mixin for creating scrim gradients
+Inspired by Andreas Larson - https://github.com/larsenwork
+https://css-tricks.com/easing-linear-gradients/
+// */
+@mixin smoothGradient($direction: 'to bottom', $startColor: 'black') {
+  $scrimCoordinates: (
+    0: 1,
+    19: 0.738,
+    34: 0.541,
+    47: 0.382,
+    56.5: 0.278,
+    65: 0.194,
+    73: 0.126,
+    80.2: 0.075,
+    86.1: 0.042,
+    91: 0.021,
+    95.2: 0.008,
+    98.2: 0.002,
+    100: 0,
+  );
+
+  $hue: hue($startColor);
+  $saturation: saturation($startColor);
+  $lightness: lightness($startColor);
+  $stops: ();
+
+  @each $colorStop, $alphaValue in $scrimCoordinates {
+    $stop: hsla($hue, $saturation, $lightness, $alphaValue) percentage($colorStop/100);
+    $stops: append($stops, $stop, comma);
+  }
+
+  background: linear-gradient(unquote($direction), $stops);
+}
+
+@mixin modalAdjustment() {
+  min-height: calc(100vh - #{$header-height});
+  box-sizing: border-box;
+}
+
+@mixin scaleProfileIcon() {
+  transform-origin: center center;
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.2143);
+  }
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: '';
+    padding-top: calc($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// navigation blur amount
+$navigationBlur: 10px;
+
+@mixin blurNavigation() {
+  -webkit-filter: blur($navigationBlur);
+  -moz-filter: blur($navigationBlur);
+  -o-filter: blur($navigationBlur);
+  -ms-filter: blur($navigationBlur);
+  filter: blur($navigationBlur);
+}

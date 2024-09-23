@@ -1,0 +1,220 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+@mixin separator($padding, $color) {
+  content: '◆';
+  color: $color;
+  display: block;
+  padding: $padding;
+}
+
+.root {
+  padding: 40px 20px 40px;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+  position: relative;
+  font-weight: 400;
+  background-color: $ww-black;
+  z-index: 3;
+
+  @include sofiaRegular();
+
+  @include media-breakpoint-up(lg) {
+    height: 515px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.innerBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid $grey-legal-dark;
+  padding: 25px 40px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 80px;
+  }
+}
+
+.trademark {
+  text-transform: uppercase;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-up(md) {
+    height: 105px;
+    align-items: flex-start;
+    width: 80%;
+  }
+}
+
+.linkItem {
+  margin-bottom: 15px;
+  display: flex;
+  cursor: pointer;
+  max-width: 200px;
+  margin-right: 10px;
+
+  @include media-breakpoint-up(xl) {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .fauxLink {
+    font-size: 16px !important;
+    padding: 0 !important;
+    line-height: 24px !important;
+
+    @include media-breakpoint-up(md) {
+      line-height: 20px;
+      font-size: 14px !important;
+      text-align: left;
+    }
+  }
+
+  a,
+  .fauxLink {
+    color: inherit;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+      line-height: 20px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    &:hover {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+.divider {
+  border: 2px;
+  height: 1px;
+  width: 100%;
+  background-color: $charcoal-grey;
+}
+
+.upperContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  padding-bottom: 12px;
+
+  @include media-breakpoint-up(md) {
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.outerContainer {
+  max-width: 1240px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  top: 0;
+  right: 0;
+  margin-bottom: 38px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 0px;
+    width: 87px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 108px;
+  }
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.33;
+  font-family: $sofiapro;
+  color: $grey-legal-border;
+
+  @include media-breakpoint-up(lg) {
+    text-align: left;
+  }
+
+  p {
+    margin: 16px 0;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    font-size: 12px;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      width: 406px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+      line-height: 20px;
+      max-width: 702px;
+      width: 100%;
+    }
+  }
+}
+
+.lowerContainer {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+}
+
+.socialShare {
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  top: 0;
+  right: 0;
+  margin-top: 19px;
+
+  @include media-breakpoint-up(md) {
+    justify-content: flex-end;
+  }
+}
